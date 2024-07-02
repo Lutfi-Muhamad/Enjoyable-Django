@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Update Customer</title>
+  </head>
+  <body>
+    <h1>Update Data Customer</h1>
+
+    <form action="" method="post">
+      {% csrf_token %} Name: <br />
+      <input name="name" value="{{ customer.cus_name }}" /> <br />
+      Email: <br />
+      <input name="email" value="{{ customer.cus_email }}" /> <br />
+      Phone: <br />
+      <input name="phone" value="{{ customer.cus_phone_number }}" /> <br />
+      Date: <br />
+      <input name="date" type="date" value="{{ customer.date }}" /> <br />
+      Time: <br />
+      <input name="time" type="time" value="{{ customer.time }}" /> <br />
+      Number Of People: <br />
+      <input name="people" value="{{ customer.number_of_people }}" /> <br />
+
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>

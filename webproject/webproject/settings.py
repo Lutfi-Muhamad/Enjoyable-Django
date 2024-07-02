@@ -74,6 +74,17 @@ WSGI_APPLICATION = "webproject.wsgi.application"
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
+# DATABASES = {
+#     "default": {
+#         "ENGINE": "django.db.backends.mysql",
+#         "NAME": "db_yummy",  # Nama database
+#         "USER": "root",  # Nama pengguna MySQL
+#         "PASSWORD": "",  # Kata sandi MySQL (kosong jika tidak ada kata sandi)
+#         "HOST": "127.0.0.1",  # Host database
+#         "PORT": "3306",  # Port database
+#     }
+# }
+
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.sqlite3",
